@@ -5,7 +5,7 @@
     <title>home</title>
 </head>
 <body>
-<h3>Збереження файлу:</h3>
+<h3>Збереження файлу</h3>
 <form th:action="@{/save}" method="post" th:object="${myFile}" enctype="multipart/form-data">
     Виберіть файл: <input name="image" type="file"><br><br>
     Виберіть тип: <select th:field="*{type}">
@@ -16,7 +16,7 @@
 </form>
 <hr>
 
-<h3>Вивести список файлів:</h3>
+<h3>Вивести список файлів</h3>
 <form th:action="@{/findAll}" method="get">
     <input type="submit" value="Вивести!">
 </form>
