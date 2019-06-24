@@ -30,7 +30,7 @@ public class MainController {
     @InitBinder("myFile")
     public void initBinder(WebDataBinder binder) {
         binder.registerCustomEditor(LocalDateTime.class, localDateTimeCustomEditor);
-        System.out.println("init!!!!!!!!!");
+        System.out.println("init!!!!!!!!");
     }
 
     @GetMapping("/")
